@@ -1,4 +1,4 @@
-package medium.TopKFrequentElements;
+package medium.topKFrequentElements;
 
 import java.util.*;
 
@@ -53,7 +53,7 @@ class Solution {
 
     public static void main(String[] args) {
         int[] input = new int[]{5, 5, 5, 5, 5, 4, 4, 4, 4, 3, 3, 3, 2, 2, 1};
-//        System.out.println(Arrays.toString(new Solution().topKFrequent(input, 3)));
+        System.out.println(Arrays.toString(new Solution().topKFrequent(input, 3)));
         input = new int[]{1,2};
         System.out.println(Arrays.toString(new Solution().topKFrequent(input, 2)));
     }
