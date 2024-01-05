@@ -1,0 +1,33 @@
+package medium.twoSum2SortedInputArray;
+
+import java.util.Arrays;
+
+class Solution {
+    public int[] twoSum(int[] numbers, int target) {
+        int firstIndex = 0;
+        int secondIndex = numbers.length - 1;
+        int firstNum, secondNum;
+        while(firstIndex < secondIndex){
+            firstNum = numbers[firstIndex];
+            secondNum = numbers[secondIndex];
+
+            if(firstNum + secondNum == target) break;
+
+            if(firstNum + secondNum < target){
+                firstIndex++;
+                continue;
+            }
+
+            secondIndex--;
+        }
+
+        return new int[]{firstIndex + 1, secondIndex + 1};
+    }
+
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(new Solution().twoSum(new int[]{2, 7, 11, 15}, 9)));
+        System.out.println(Arrays.toString(new Solution().twoSum(new int[]{2, 3, 4}, 6)));
+        System.out.println(Arrays.toString(new Solution().twoSum(new int[]{-1, 0}, -1)));
+        System.out.println(Arrays.toString(new Solution().twoSum(new int[]{0, 0, 3, 4}, 0)));
+    }
+}
