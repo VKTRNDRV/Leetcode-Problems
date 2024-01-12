@@ -1,4 +1,4 @@
-package easy.ListNode;
+package utils.ListNode;
 
 public class ListNode {
     public int val;

@@ -1,6 +1,6 @@
 package medium.reorderList;
 
-import easy.ListNode.ListNode;
+import utils.ListNode.ListNode;
 
 import java.util.ArrayDeque;
 

@@ -1,6 +1,6 @@
 package easy.reverseLinkedList;
 
-import easy.ListNode.ListNode;
+import utils.ListNode.ListNode;
 
 import java.util.Stack;
 

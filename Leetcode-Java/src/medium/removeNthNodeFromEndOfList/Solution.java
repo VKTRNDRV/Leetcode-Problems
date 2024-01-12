@@ -1,6 +1,6 @@
 package medium.removeNthNodeFromEndOfList;
 
-import easy.ListNode.ListNode;
+import utils.ListNode.ListNode;
 
 public class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
